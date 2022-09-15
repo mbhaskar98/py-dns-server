@@ -23,21 +23,11 @@ parser.add_argument(
 )
 
 
-parser.add_argument(
-    "--name_servers",
-    "-n",
-    help="List of self.name_servers present on the machine",
-    nargs="+",
-    required=False,
-    # default=["192.168.1.1"],
-)
-
-
 def main():
     args = parser.parse_args()
-    dns_server = DNSServer(
-        address=args.address, port=args.port, name_servers=args.name_servers
-    )
+
+    dns_server = DNSServer(address=args.address, port=args.port)
+
     dns_server.listen_and_serve()
 
 
