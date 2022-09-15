@@ -1,1 +1,1 @@
-# dns-server-practice
+# py-server-practice
