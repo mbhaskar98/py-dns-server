@@ -1,0 +1,2 @@
+1. Other queries apart from A and AAAA
+2. Message compression
