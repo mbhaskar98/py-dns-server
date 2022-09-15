@@ -1,7 +1,6 @@
 import argparse
 from dns_server.dns_server import DNSServer
 
-
 parser = argparse.ArgumentParser()
 
 parser.add_argument(
