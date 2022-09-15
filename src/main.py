@@ -25,9 +25,7 @@ parser.add_argument(
 
 def main():
     args = parser.parse_args()
-
     dns_server = DNSServer(address=args.address, port=args.port)
-
     dns_server.listen_and_serve()
 
 
